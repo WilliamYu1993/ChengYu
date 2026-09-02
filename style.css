@@ -82,6 +82,7 @@ nav {
 
 nav a {
     color: #6b7280;
+
     font-size: 0.95rem;
     font-weight: 500;
 
@@ -117,8 +118,17 @@ nav a.active {
         );
 }
 
+
+/* Experience Page Hero */
+
+.experience-hero {
+    min-height: 400px;
+}
+
+
 .hero-content {
     display: grid;
+
     grid-template-columns: 1.4fr 0.8fr;
 
     gap: 80px;
@@ -168,6 +178,7 @@ nav a.active {
 
 .hero-buttons {
     display: flex;
+
     gap: 15px;
 
     flex-wrap: wrap;
@@ -194,6 +205,7 @@ nav a.active {
 
 .btn.primary {
     background: #2563eb;
+
     color: white;
 
     box-shadow:
@@ -237,7 +249,9 @@ nav a.active {
 }
 
 
-/* Profile Photo */
+/* ================================
+   Profile Photo
+================================ */
 
 .profile-circle {
     width: 150px;
@@ -261,9 +275,6 @@ nav a.active {
     justify-content: center;
 }
 
-
-/* Profile Photo Image */
-
 .profile-circle img {
     width: 100%;
     height: 100%;
@@ -274,7 +285,7 @@ nav a.active {
 }
 
 
-/* Name */
+/* Profile Name */
 
 .hero-card h2 {
     font-size: 1.5rem;
@@ -286,12 +297,45 @@ nav a.active {
 }
 
 
-/* Position */
+/* Profile Position */
 
 .hero-card p {
     color: #6b7280;
 
     margin: 0;
+}
+
+
+/* ================================
+   School Logos
+================================ */
+
+.school-logo {
+    width: 110px;
+    height: 110px;
+
+    margin: 0 auto 22px;
+
+    padding: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+}
+
+.school-logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
 }
 
 
@@ -312,7 +356,6 @@ nav a.active {
     color: #2563eb;
 
     font-size: 0.8rem;
-
     font-weight: 700;
 
     letter-spacing: 2px;
@@ -364,6 +407,9 @@ nav a.active {
         0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
+
+/* Card Icon */
+
 .card-icon {
     display: block;
 
@@ -372,6 +418,9 @@ nav a.active {
     margin-bottom: 20px;
 }
 
+
+/* Card Title */
+
 .card h3 {
     font-size: 1.25rem;
 
@@ -379,6 +428,9 @@ nav a.active {
 
     margin-bottom: 12px;
 }
+
+
+/* Card Text */
 
 .card p {
     color: #6b7280;
@@ -517,10 +569,16 @@ footer {
     }
 
 
+    /* Hero */
+
     .hero {
         min-height: auto;
 
         padding: 80px 0;
+    }
+
+    .experience-hero {
+        min-height: auto;
     }
 
     .hero-content {
@@ -534,10 +592,14 @@ footer {
     }
 
 
+    /* Cards */
+
     .cards {
         grid-template-columns: 1fr;
     }
 
+
+    /* About */
 
     .about-grid {
         grid-template-columns: 1fr;
@@ -545,6 +607,8 @@ footer {
         gap: 30px;
     }
 
+
+    /* Footer */
 
     .footer-content {
         flex-direction: column;
@@ -555,6 +619,10 @@ footer {
     }
 }
 
+
+/* ================================
+   Small Mobile
+================================ */
 
 @media (max-width: 500px) {
 
@@ -577,5 +645,17 @@ footer {
 
     .btn {
         text-align: center;
+    }
+
+
+    /* Smaller School Logo */
+
+    .school-logo {
+        width: 95px;
+        height: 95px;
+
+        margin-bottom: 18px;
+
+        padding: 10px;
     }
 }
